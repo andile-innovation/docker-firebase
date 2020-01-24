@@ -1,1 +1,5 @@
-FROM node:12.13.1-slim
+FROM node
+
+RUN yarn global add firebase-tools
+
+ENTRYPOINT ["bash"]
